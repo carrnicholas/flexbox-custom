@@ -109,16 +109,19 @@ body {
 
 .wrapper {
   /* set the display to flex and use the justify-content & align-items properties to center all child elements on the page */
+  /* this controls the position of the black boxes themselves */
   margin: 0;
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
-#content {
+#content,
+#content-2 {
   /* set the display to flex and use the justify-content & align-items properties to center the text within the div*/
+  /* this controls the text inside the black boxes */
   background: #222;
   background:rgba(0,0,0,0.7);
   color: #fff;
@@ -127,11 +130,11 @@ body {
   font-size: 1.25em;
   line-height: 1.5em;
   border-radius: 10px;
-  padding: 0px 30px;
+  padding: 0px 30px 10px;
   width: 300px;
   height: 300px;
   display: flex;
-  justify-content: center;
+  justify-content: justify;
   align-items: center;
 }
 
